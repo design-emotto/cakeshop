@@ -320,7 +320,7 @@ footer {
   }
 
   .hero::before {
-    background: url('images/cakeshop_backphoto_smartphone.png');
+    background: url('images/cakeshop_backphoto_smartphone.jpg');
     background-size: cover;
     background-position: center;
   }
