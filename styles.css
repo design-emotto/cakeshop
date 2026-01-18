@@ -84,11 +84,12 @@ nav {
   align-items: center;
   justify-content: center;
   background: linear-gradient(
-    135deg,
-    var(--color-bg) 0%,
-    var(--color-bg-alt) 50%,
-    var(--color-secondary) 100%
-  );
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.3)
+  ), url('images/cakeshop_backphoto.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   text-align: center;
 }
 
@@ -96,15 +97,17 @@ nav {
   font-family: var(--font-serif);
   font-size: 4rem;
   font-weight: 400;
-  color: var(--color-primary);
+  color: var(--color-white);
   letter-spacing: 0.3em;
   margin-bottom: 1.5rem;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .tagline {
   font-size: 1.1rem;
-  color: var(--color-text-light);
+  color: var(--color-white);
   letter-spacing: 0.2em;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
 }
 
 /* Sections */
