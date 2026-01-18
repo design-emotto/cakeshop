@@ -83,14 +83,33 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(
-    rgba(0, 0, 0, 0.3),
-    rgba(0, 0, 0, 0.3)
-  ), url('images/cakeshop_backphoto.png');
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('images/cakeshop_backphoto.png');
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
-  text-align: center;
+  z-index: -2;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: -1;
 }
 
 .hero-content h1 {
@@ -300,8 +319,10 @@ footer {
     display: none;
   }
 
-  .hero {
-    background-attachment: scroll;
+  .hero::before {
+    background: url('images/cakeshop_backphoto_smartphone.png');
+    background-size: cover;
+    background-position: center;
   }
 
   .hero-content {
