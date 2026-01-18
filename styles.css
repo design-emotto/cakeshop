@@ -210,6 +210,22 @@ nav {
 }
 
 /* Access Section */
+.access-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.map-container {
+  margin-bottom: 3rem;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.map-container iframe {
+  display: block;
+}
+
 .access-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
